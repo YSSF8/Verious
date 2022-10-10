@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verious - Custom mobile style OS</title>
+        <link rel="shortcut icon" href="./imgs/favicon.ico">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./wp.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
+    </head>
+    <body>
+        <h1>
+            <span class="hrs">00</span>
+            <span>:</span>
+            <span class="mins">00</span>
+        </h1>
+        <br>
+        <center>
+            <button class="lock-btn"><i class="fa-thin fa-lock-keyhole-open"></i></button>
+        </center>
+        <div class="content">
+            <div class="apps-sort">
+                <div class="app weather-icon">
+                    <img src="./imgs/apps/weather.png" height="70" draggable="false" alt="">
+                    <div class="icon-title">Weather</div>
+                </div>
+                <div class="app terminal-icon">
+                    <img src="./imgs/apps/terminal.png" height="70" draggable="false" alt="">
+                    <div class="icon-title">Terminal</div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="weather">
+                <div class="weather-form">
+                    <input type="text" spellcheck="false" placeholder="Location">
+                    <button>Submit</button>
+                </div>
+                <div class="occ-overview">
+                    <pre class="weather-desc">Weather: <span class="main">..</span><span class="desc">.</span></pre>
+                    <pre class="wind-desc">Wind: <span class="deg">.</span><span class="gust">.</span><span class="speed">.</span></pre>
+                </div>
+                <hr>
+                <pre>Your IP address is "<b></b>".</pre>
+                <pre>Don't share your IP address with anyone.</pre>
+            </div>
+            <div class="terminal">
+                <span>></span>
+                <input type="text" spellcheck="false" placeholder="Commands">
+                <br>
+                <textarea aria-label="terminal" disabled></textarea>
+            </div>
+        </div>
+        <div class="ctx-menu">
+            <div class="option shutdown" onclick="window.close()">
+                <i class="fa-thin fa-power-off"></i> Shutdown
+            </div>
+            <hr>
+            <div class="option restart" onclick="location.reload()">
+                <i class="fa-thin fa-arrow-rotate-left"></i> Restart
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
