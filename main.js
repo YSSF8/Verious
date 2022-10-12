@@ -130,7 +130,7 @@ weatherBtn.addEventListener('click', () => {
             document.querySelector('.weather .occ-overview .wind-desc .speed').innerHTML = ', speed - ' + data['wind']['speed'];
 
             if (weatherInput.value == 'Israel') {
-                alert('Did you mean "Trash"?');
+                alert('Do you mean "Trash"?');
             }
         })
         .catch(() => {
