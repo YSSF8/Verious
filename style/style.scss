@@ -43,6 +43,7 @@ h1 {
     width: max-content;
     background: $tr-blk;
     backdrop-filter: blur(10px);
+    resize: both;
     transform: scale(0);
     transition: transform 200ms;
 
@@ -91,6 +92,16 @@ h1 {
         margin: 4px;
         color: $light-gray;
     }
+}
+
+iframe {
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    width: 40rem;
+    height: 25rem;
+    margin: 23px 0 0 0;
+    transform: scale(0);
+    transition: transform 200ms;
 }
 
 .opened {

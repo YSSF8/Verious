@@ -87,6 +87,11 @@ terminal.addEventListener('click', () => {
     }
 });
 
+
+document.querySelector('.google-icon').addEventListener('click', () => {
+    document.querySelector('iframe').classList.toggle('opened');
+});
+
 const ctx = document.querySelector('.ctx-menu');
 
 document.addEventListener('contextmenu', e => {
@@ -123,8 +128,12 @@ weatherBtn.addEventListener('click', () => {
             document.querySelector('.weather .occ-overview .wind-desc .deg').innerHTML = 'deg - ' + data['wind']['deg'];
             document.querySelector('.weather .occ-overview .wind-desc .gust').innerHTML = ', gust - ' + data['wind']['gust'];
             document.querySelector('.weather .occ-overview .wind-desc .speed').innerHTML = ', speed - ' + data['wind']['speed'];
+
+            if (weatherInput.value == 'Israel') {
+                alert('Did you mean "Trash"?');
+            }
         })
         .catch(() => {
-            alert(`Location "${weatherInput.value}" not found!\nDouble check the word`);
+            alert(`Location "${weatherInput.value}" not found!\nDouble check the word, may you have entered the name wrong`);
         });
 });

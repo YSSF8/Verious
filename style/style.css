@@ -45,6 +45,7 @@ h1 {
   background: rgba(0, 0, 0, 0.4);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  resize: both;
   transform: scale(0);
   transition: transform 200ms;
 }
@@ -92,6 +93,16 @@ h1 {
   position: absolute;
   margin: 4px;
   color: #bbb;
+}
+
+iframe {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 40rem;
+  height: 25rem;
+  margin: 23px 0 0 0;
+  transform: scale(0);
+  transition: transform 200ms;
 }
 
 .opened {
